@@ -72,5 +72,11 @@ public class MathServiceTest {
 		int rs = mathService.sum(-10, -20);
 		assertEquals(-30, rs);
 	}
+	
+	@Test
+	public void testNegativeSumAnother(){
+		int rs = mathService.sum(-10, -30);
+		assertEquals(-40, rs);
+	}
 
 }
