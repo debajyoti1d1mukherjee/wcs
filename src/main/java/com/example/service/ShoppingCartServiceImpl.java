@@ -23,6 +23,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
 		if(cart.containsKey(pid)){
 			Product pr = cart.get(pid);
 			pr.setQty(pr.getQty()+1);
+			System.out.println("Item is added......");
 		}else{
 			cart.put(pid, product);
 		}
